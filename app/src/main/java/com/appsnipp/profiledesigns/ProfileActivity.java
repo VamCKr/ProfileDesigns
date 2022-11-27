@@ -1,20 +1,24 @@
 package com.appsnipp.profiledesigns;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class ProfileActivity extends AppCompatActivity {
-
+    ImageView reg_icon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        reg_icon=findViewById(R.id.register_number_edit_icon);
+        reg_icon.setClickable(true);
+        reg_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Edit icon is Clicked",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

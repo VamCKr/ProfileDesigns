@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.appsnipp.profiledesigns.ProfileActivity"
-    tools:showIn="@layout/activity_profile">
-    <LinearLayout
+    tools:showIn="@layout/activity_profile"
+    android:id="@+id/nested_scroll_view_profile">
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -242,7 +243,271 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/first_linear_layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regd No"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+
+                    android:id="@+id/register_number_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="191FA04354"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/register_number_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+            <View style="@style/proifleDetailsView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+                    android:id="@+id/mobile_number_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9***********"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/mobile_number_profile_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+            <View style="@style/proifleDetailsView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+                    android:id="@+id/email_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tpvkrish2301@gmail.com"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/email_profile_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_linear_layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/first_linear_layout_profile"
+            android:paddingLeft="15dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+                    android:id="@+id/username_profile_in_second_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tanniru Purna Vamsi Krishna"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/username_profile_in_second_layout_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+            <View style="@style/proifleDetailsView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Section"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+                    android:id="@+id/section_in_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/section_in_profile_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+            <View style="@style/proifleDetailsView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:layout_weight="0.4"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#2C2B2B"
+                    />
+                <TextView
+                    android:id="@+id/year_in_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IV"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="0.5"
+                    android:textSize="17dp"
+                    android:textColor="#9E9393"/>
+                <ImageView
+                    android:id="@+id/year_in_profile_edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.02"
+                    android:src="@drawable/greater_than_icon"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
 
