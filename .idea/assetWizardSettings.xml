@@ -314,7 +314,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialiconstwotone/edit/twotone_edit_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/arrow_forward_ios/baseline_arrow_forward_ios_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -324,8 +324,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="edit_icon" />
-                            <entry key="sourceFile" value="C:\Users\tpvkr\Downloads\ProfileDesigns" />
+                            <entry key="color" value="868383" />
+                            <entry key="outputName" value="greater_than_icon" />
+                            <entry key="sourceFile" value="/C:\Users\tpvkr\Downloads\ProfileDesigns" />
                           </map>
                         </option>
                       </PersistentState>
